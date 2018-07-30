@@ -1,0 +1,8 @@
+flow "Run CI on push" {
+  on = "push"
+  resolves = "ci"
+}
+
+task "ci" {
+  uses = "Choose a CI provider"
+}
