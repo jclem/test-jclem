@@ -1,0 +1,3 @@
+flow "Untitled flow" {
+  on = "push"
+}
