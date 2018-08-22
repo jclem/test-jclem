@@ -1,0 +1,8 @@
+flow "Untitled flow" {
+  on = "push"
+  resolves = "new-task"
+}
+
+task "new-task" {
+  uses = "github-app-name-here"
+}
