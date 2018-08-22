@@ -1,3 +1,4 @@
 flow "Untitled flow" {
   on = "push"
+  resolves = []
 }
