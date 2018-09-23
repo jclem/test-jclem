@@ -1,7 +1,3 @@
-workflow "Empty Workflow" {
-  on = "push"
-}
-
 workflow "Large workflow" {
   on = "push"
   resolves = [
@@ -92,3 +88,8 @@ action "new-task-16" {
   needs = ["new-task-15"]
   uses = "bbq-beets/test-jclem/h@master"
 }
+
+workflow "Empty Workflow" {
+  on = "push"
+}
+
