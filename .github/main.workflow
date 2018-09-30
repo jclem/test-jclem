@@ -8,7 +8,7 @@ workflow "Large workflow" {
 }
 
 action "new-task" {
-  uses = "tundra-boa/azure-cli"
+  uses = "tundra-boa/azure/cli"
 }
 
 action "new-task-1" {
