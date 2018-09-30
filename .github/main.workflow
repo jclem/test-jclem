@@ -8,7 +8,7 @@ workflow "Large workflow" {
 }
 
 action "new-task" {
-  uses = "tunr-boa/azure-cli@master"
+  uses = "./azure-cli@master"
 }
 
 action "new-task-1" {
