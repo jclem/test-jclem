@@ -8,7 +8,7 @@ workflow "Large workflow" {
 }
 
 action "new-task" {
-  uses = "./azure-cli"
+  uses = "./.github/azure-cli/foo"
 }
 
 action "new-task-1" {
