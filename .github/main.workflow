@@ -8,21 +8,21 @@ workflow "Large workflow" {
 }
 
 action "new-task" {
-  uses = "./.github/azure-cli/foo"
+  uses = "tundra-boa/azure-cli"
 }
 
 action "new-task-1" {
-  uses = "tdra-boa/heroku@master"
+  uses = "tundra-boa/heroku@master"
 }
 
 action "new-task-2" {
   needs = ["new-task-1"]
-  uses = "tunra-boa/now@master"
+  uses = "tundra-boa/now@master"
 }
 
 action "new-task-3" {
   needs = ["new-task"]
-  uses = "tunra-boa/npm@master"
+  uses = "tundra-boa/npm@master"
 }
 
 action "new-task-4" {
