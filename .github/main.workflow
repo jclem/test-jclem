@@ -8,7 +8,7 @@ workflow "Large workflow" {
 }
 
 action "new-task" {
-  uses = "./azure-cli@master"
+  uses = "./azure-cli"
 }
 
 action "new-task-1" {
