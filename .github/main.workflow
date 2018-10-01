@@ -4,6 +4,9 @@ workflow "Large workflow" {
     "new-task-5",
     "new-task-6",
     "new-task-16",
+    "new-task-17",
+    "new-task-18",
+    "new-task-19",
   ]
 }
 
@@ -89,7 +92,17 @@ action "new-task-16" {
   uses = "bbq-beets/test-jclem/h@master"
 }
 
-workflow "Empty Workflow" {
-  on = "push"
+action "new-task-17" {
+  needs = ["new-task-7"]
+  uses = "docker://test"
 }
 
+action "new-task-18" {
+  needs = ["new-task-7"]
+  uses = "docker://test"
+}
+
+action "new-task-19" {
+  needs = ["new-task-7"]
+  uses = "docker://test"
+}
